@@ -55,7 +55,7 @@ const Home = ()=>{
                         <div className="d-flex align-items-center">
                             <div className="info w-75">
                                 <h3 className="mb-0 hd">Best Sellers</h3>
-                                <p className="text-dark text-sml mb-0" >Do not miss the current offers until the end of March.</p>
+                                <p className="text-dark text-sml mb-0" >Do not mis the current offers until the end of March.</p>
                             </div>
                             <Button className="viewAllBtn ml-auto" style={{borderRadius:'30px', border:'none', borderColor:'#ccc', color:'#000'
                                 , backgroundColor:'#fff', padding:'8px 15px;'
