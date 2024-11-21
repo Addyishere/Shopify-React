@@ -1,0 +1,185 @@
+*{margin: 0px; padding: 0px;}
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&family=Urbanist:wght@100&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css');
+
+
+body{font-family: "Kanit", sans-serif; font-size: 14px; overflow-x: hidden;}
+
+.bg-purple{background: #233a95;}
+
+.container{max-width: 85%;}
+
+
+.headerWrapper .top-strip{padding: 8px 0px; }
+.headerWrapper .top-strip p{color: #fff;}
+
+.headerWrapper .header{width: 100%; height: auto; padding: 25px 0px;}
+.logoWrapper img{width: 100%;}
+
+.headerWrapper .header .part2 .countryDrop{width: 150px; height: 50px; min-width: 150px; color: #233a95; border: 1px solid rgba(0,0,0,0.7); border-radius: 7px;
+padding: 10px 10px;}
+.headerWrapper .header .part2 .countryDrop{text-align: left; justify-content: flex-start; border: 1px solid rgba(0,0,0,0.1);}
+
+.headerWrapper .header .part2 .countryDrop .lable{font-size: 14px; text-transform: capitalize; color: rgb(80, 80, 80); line-height: 18px;}
+.headerWrapper .header .part2 .countryDrop .name{font-size: 14px; text-transform: capitalize; color: black; line-height: 18px;}
+
+.headerWrapper .header .part2 .countryDrop .span.ml-auto svg{opacity: 0.7;}
+
+.headerSearch{width: 60%; height: 50px; background: #f3f4f7; padding: 10px; position: relative; border-radius: 10px; border: 1px solid rgba(0,0,0,0.1);}
+.headerSearch input{background: transparent; outline: none; font-size: 15px; color: black;
+    width: 100%; height: 30px; border: 0px; padding: 0px 20px;}
+
+.headerSearch button{border: 0px solid rgba(0,0,0,0.1); position: absolute; top: 10px; right: 15px; z-index: 100;
+    min-width: 30px; height: 30px; width: 30px; border-radius: 50%;}
+
+
+.headerSearch button svg{font-size: 18px;}
+
+header .part3 .circle{border: 0px solid rgba(0,0,0,0.1); background-color: transparent; align-items: center; justify-content: center; min-width: 40px; height: 40px; width: 40px;
+border-radius: 50%; }
+
+header .part3 .circle svg{font-size: 25px;}
+
+.cartTab button{background: #fff1ee; }
+.cartTab button svg{color: #ea2b0f;}
+.cartTab .price{font-size: 18px; color: rgba(0,0,0,0.8); font-weight: 500;}
+.cartTab .count{position: absolute; top: 0px; right: 0px; background: #ea2b0f; border-radius: 50%; color: #fff;
+ display: flex; width: 15px; height: 15px;}
+ 
+
+ nav .allCatTab{background: #2bbef9; padding: 8px 20px; border-radius: 30px;}
+ nav .allCatTab{color: white; }
+ nav .allCatTab:hover{background: #2bbef9;}
+ nav .allCatTab .text{font-weight: 500; }
+
+ nav .allCatTab .icon1 svg{font-size: 20px; }
+ nav .allCatTab .icon2 svg{font-size: 20px;} 
+ 
+ nav .navPart2 ul{margin-bottom: 0px;}
+ nav .navPart2 ul li{padding-bottom: 20px;}
+ nav .navPart2 ul li a{font-size: 16px; font-weight: 500; text-decoration: none; color: rgba(0,0,0,0.8);
+ display: flex; align-items: center; padding: 10px 15px; transition: all 0.2s ease-in-out; border-radius: 20px;}
+ 
+
+ nav .navPart2 ul li a:hover{background: #f0faff; color: #2bbef9;}
+
+.locationModal .MuiPaper-elevation{padding: 25px; position: relative;}
+.locationModal .countryList{margin-bottom: 0px; max-height: 400px; overflow-y: scroll; overflow-x: hidden;}
+.locationModal .countryList li{width: 100%; list-style: none;}
+.locationModal .countryList li button{width: 100%;text-transform: capitalize; color: black; justify-content: flex-start;
+padding: 10px 20px;}
+
+.locationModal .countryList li button:hover{
+    background: #f1f1f1;
+}
+
+.locationModal .countryList li button.active{background: #ccc;}
+
+.locationModal .close_{position: absolute; top: 10px; right: 10px; color: black; min-width: 40px; 
+width: 40px; height: 40px; border-radius: 15%; border: none;}
+.locationModal .close_ svg{font-size: 20px;}
+
+.close_{ top: 10px; right: 10px; color: black; min-width: 40px; 
+    width: 40px; height: 40px; border-radius: 15%; border: none;}
+.close_ svg{font-size: 20px;}
+
+::-webkit-scrollbar{width: 8px; height: 8px;}
+::-webkit-scrollbar-thumb{background: #ccc;}
+::-webkit-scrollbar-track{background: transparent;}
+
+
+nav .navPart2 ul li{position: relative;}
+nav .navPart2 ul li .submenu{position: absolute; top: 150%; left: 0px; min-width: 200px;
+background: #fff; opacity: 0; visibility: hidden; 
+transition: all 0.2s ease-in-out; z-index: 100;}
+
+nav .navPart2 ul li .submenu a{display: block; width: 100%;}
+nav .navPart2 ul li:hover .submenu{opacity: 1; visibility: inherit; top: 100%;}
+
+nav .navPart1 .catWrapper{position: relative;}
+nav .navPart1 .catWrapper .sidebarNav{width: 210px; height: auto; background: #fff; position: absolute;
+top: 130%; left: 0px; border: 1px solid rgba(0,0,0,0.1); padding: 15px 0px; transition: all 0.2s;
+}
+
+nav .navPart1 .catWrapper .sidebarNav ul li{width: 100%; list-style: none; padding: 0px 15px;}
+nav .navPart1 .catWrapper .sidebarNav ul li Button{color: #000; width: 100%; justify-content: flex-start; border: 0px; outline-color: #ffffff;
+text-transform: capitalize;}
+nav .navPart1 .catWrapper .sidebarNav ul li Button:hover{background: transparent;}
+
+nav .navPart1 .catWrapper .sidebarNav .open{height: 100%; opacity: 100; visibility: inherit; }
+
+/* Banner Style Start*/
+.HomeBannerSection{position: relative; overflow: hidden;}
+.HomeBannerSection *{outline: none;}
+.HomeBannerSection .slick-arrow{position: absolute; top: 45%; z-index: 100; display: flex;
+align-items: center; justify-content: center; width: 40px; height: 40px; background: #000; border-radius: 100%;}
+.HomeBannerSection .slick-arrow.slick-next{right: 25px;}
+.HomeBannerSection .slick-arrow.slick-prev{left: 25px;}
+ 
+/* Banner End */
+
+/* after Banner  start */
+
+.cursor{cursor: pointer;}
+
+.homeProducts{padding: 25px 0px; width: 100%;}
+.homeProducts .banner{width: 100%; border-radius: 10px; overflow: hidden;}
+
+.text-sml{font-size: 14px;}
+
+.productRow .hd{font-size: 25px; }
+
+.viewAllBtn {padding: 8px 15px; background: transparent; border: 1px solid rgba(22, 21, 21, 0.4); border-radius: 30px; color: #000;
+font-weight: 600;}
+
+.productItem{width: 100%; height: auto; border: 1px solid rgba(0, 0, 0, 0.1); cursor: pointer;
+position: relative;}
+.productItem .badge{display: inline-block; padding: 7px 10px; position: absolute; top: 7px; left: 7px;
+z-index: 100;}
+.productItem .info h4{font-size: 15px; font-weight: 600;}
+.productItem .info{padding: 15px; }
+.productItem .info .oldPrice{font-size: 16px; color: rgba(0,0,0,0.4); text-decoration: line-through;}
+.productItem .info .netPrice{font-size: 16px; }
+
+.info .oldPrice{font-size: 16px; color: rgba(0,0,0,0.4); text-decoration: line-through;}
+.info .netPrice{font-size: 20px; }
+.info .oldPrice lg{font-size: 20px;}
+.info .netPrice lg{font-size: 25px; }
+
+.badge-primary{background: #2bbef9;}
+
+.productItem .actions{position: absolute; top: 20px; right: -100%; z-index: 1000; display: flex;
+flex-direction: column; gap: 10px; transition: all 0.3s ease-in-out;}
+.productItem .actions button{display: flex; align-items: center; justify-content: center; 
+min-width: 40px; height: 40px; width: 40px; border: 1px solid rgba(0,0,0,0.1); border-radius: 50%; background: #fff;
+box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+transition: all 0.0s;}
+
+.productItem .actions button svg{color: #000; opacity: 0.8; pointer-events: none;
+font-size: 15px; }
+.productItem .imgWrapper{overflow: hidden;}
+
+
+.productItem .actions button:hover{background: #233a95;}
+.productItem .imgWrapper:hover .actions{opacity: 1; right: 10px;}
+.productItem .actions button:hover svg{color: #fff;}
+
+.newsLetterSection{width: 100%; height: auto; background: #233a95; overflow: hidden; padding: 80px 0px ;
+position: relative;}
+.newsLetterSection .col-md-6{position: static;}
+.newsLetterSection p{font-size: 16px; margin: 10px 0px;}
+.newsLetterSection h3{font-size: 30px;}
+.newsLetterSection img{position: absolute; border: 0px; right: 0px;}
+.newsLetterSection form{width: 100%; height: 60px; background: #fff; padding: 10px; position: relative; border-radius: 5px;}
+.newsLetterSection form svg{position: absolute; top: 16px; opacity: 0.5; left: 10px; font-size: 25px; }
+.newsLetterSection form input{width: 100%; height: 100%; background: #fff; outline: none; border: 0px;
+padding-left: 50px; padding-right: 200px; }
+
+.newsLetterSection form button{position: absolute; top: 7px; right: 7px; background: #233a95; font-size: 16px;
+padding: 9px 25px; color: #fff;}
+
+.productModal .MuiPaper-elevation{padding: 25px; position: relative; max-width: 900px; width: 900px;}
+
+.productModal h4{font-size: 22px;}
